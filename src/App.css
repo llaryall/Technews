@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Additional custom styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  cursor: url('/icons8-cursor-24.cur'), auto; /* Corrected custom cursor path */
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Add a custom cream color */
+:root {
+  --cream: #fdf6e3;
+  --light-yellow: #fff9c4;
+}
+
+/* Adjust gradient background to include more white */
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, white 0%, var(--cream) 50%, var(--light-yellow) 100%);
+}
+
+/* Glassy effect for card container */
+.glassy {
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
